@@ -1,10 +1,10 @@
 const TopNav = () => {
   return (
     <>
-      <header>
-        <nav className="bg-gray-900 flex w-f justify-between items-center cursor-pointer">
+      <header className="fixed top z-50 shadow-lg w-full border-b-[1px] border-yellow-300">
+        <nav className="bg-stone-900 flex justify-between items-center cursor-pointer transition-all">
           <div className="bg-yellow-300 p-3">
-            <h1 class="text-2xl font-heading font-black h-full border-b-2 border-yellow-300 hover:border-gray-900">
+            <h1 class="text-2xl font-heading font-black h-full border-b-2 border-yellow-300 hover:border-stone-900">
               P
               <span class="font-sans" style={{ fontSize: "1.7rem" }}>
                 S
@@ -12,16 +12,21 @@ const TopNav = () => {
             </h1>
           </div>
           <div className="bg-gray-900 flex font-bold ">
-            <a
-              href="#"
-              class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-2 border-gray-900 hover:border-yellow-300"
-            >
-              Home
-            </a>
+            <div class="border-l-2 border-gray-900 border-dotted">
+              <a
+                href="#"
+                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 
+				hover:text-yellow-300
+				transition-all "
+              >
+                Home
+              </a>
+            </div>
             <div class="border-l-2 border-yellow-300 border-dotted">
               <a
                 href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide hover:border-solid hover:border-b-2 hover:border-yellow-300 "
+                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+				transition-all"
               >
                 Web Dev
               </a>
@@ -29,7 +34,8 @@ const TopNav = () => {
             <div class="border-l-2 border-yellow-300 border-dotted">
               <a
                 href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide hover:border-solid hover:border-b-2 hover:border-yellow-300"
+                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+				transition-all"
               >
                 Design
               </a>
@@ -37,7 +43,8 @@ const TopNav = () => {
             <div class="border-l-2 border-yellow-300 border-dotted">
               <a
                 href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide hover:border-solid hover:border-b-2 hover:border-yellow-300"
+                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+				transition-all"
               >
                 Skills
               </a>
@@ -45,7 +52,8 @@ const TopNav = () => {
             <div class="border-l-2 border-yellow-300 border-dotted">
               <a
                 href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide hover:border-solid hover:border-b-2 hover:border-yellow-300"
+                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+				transition-all"
               >
                 Contact
               </a>

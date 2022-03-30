@@ -10,20 +10,17 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App  bg-gradient-to-b from-gray-700 to-gray-900">
+    <div className="App  bg-gradient-to-b from-stone-600 to-stone-900 h-content">
       <TopNav />
-
       <main>
         <Hero />
         <WebDev />
         <Design />
         <Skills />
+
         <Contact />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </div>
   );
 }
