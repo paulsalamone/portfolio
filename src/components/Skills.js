@@ -5,7 +5,7 @@ import SkillsCard from "./SkillsCard";
 const Skills = () => {
   console.log(SkillsData.frontend);
   return (
-    <section className="flex flex-col items-center  p-4 mt-2">
+    <section id="skills" className="flex flex-col items-center  p-4 mt-2">
       <div className=" mb-6 mt-10  p-1 w-[92%] items-center ">
         <h2 className="text-white text-3xl text-center tracking-widest font-medium mt-5 mb-4 mx-3">
           SKILLS

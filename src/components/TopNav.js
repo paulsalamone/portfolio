@@ -1,62 +1,76 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 const TopNav = () => {
   return (
     <>
       <header className="fixed top z-50 shadow-lg w-full border-b-[1px] border-yellow-300">
         <nav className="bg-stone-900 flex justify-between items-center cursor-pointer transition-all">
           <div className="bg-yellow-300 p-3">
-            <h1 class="text-2xl font-heading font-black h-full border-b-2 border-yellow-300 hover:border-stone-900">
-              P
-              <span class="font-sans" style={{ fontSize: "1.7rem" }}>
-                S
-              </span>
-            </h1>
+            <Link smooth to="#home">
+              <h1 class="text-2xl font-heading font-black h-full border-b-2 border-yellow-300 hover:border-stone-900">
+                <a>
+                  P
+                  <span class="font-sans" style={{ fontSize: "1.7rem" }}>
+                    S
+                  </span>
+                </a>
+              </h1>
+            </Link>
           </div>
           <div className="bg-gray-900 flex font-bold ">
             <div class="border-l-2 border-gray-900 border-dotted">
-              <a
-                href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 
+              <Link smooth to="#home">
+                <a
+                  class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 
 				hover:text-yellow-300
 				transition-all "
-              >
-                Home
-              </a>
+                >
+                  Home
+                </a>
+              </Link>
             </div>
             <div class="border-l-2 border-yellow-300 border-dotted">
-              <a
-                href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+              <Link smooth to="#webdev">
+                <a
+                  href="#webdev"
+                  class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
 				transition-all"
-              >
-                Web Dev
-              </a>
+                >
+                  Web Dev
+                </a>
+              </Link>
             </div>
             <div class="border-l-2 border-yellow-300 border-dotted">
-              <a
-                href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+              <Link smooth to="#design">
+                <a
+                  class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
 				transition-all"
-              >
-                Design
-              </a>
+                >
+                  Design
+                </a>
+              </Link>
             </div>
             <div class="border-l-2 border-yellow-300 border-dotted">
-              <a
-                href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+              <Link smooth to="#skills">
+                <a
+                  href="#skills"
+                  class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
 				transition-all"
-              >
-                Skills
-              </a>
+                >
+                  Skills
+                </a>
+              </Link>
             </div>
             <div class="border-l-2 border-yellow-300 border-dotted">
-              <a
-                href="#"
-                class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
+              <Link smooth to="#contact">
+                <a
+                  href="#contact"
+                  class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
 				transition-all"
-              >
-                Contact
-              </a>
+                >
+                  Contact
+                </a>
+              </Link>
             </div>
             <div class="text-white text-xs align-middle pt-3 px-4">
               ...icons
