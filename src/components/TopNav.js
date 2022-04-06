@@ -73,7 +73,7 @@ const TopNav = () => {
               </Link>
             </div>
             <div class="text-white text-xs align-middle pt-3 px-4">
-              ...icons
+              [li] [gh] [tw] [be]
             </div>
           </div>
         </nav>

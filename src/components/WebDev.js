@@ -1,12 +1,12 @@
 import { WebDevData } from "../content/WebDevData";
 import Card1 from "./Card1";
+import CardFeature from "./CardFeature";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 const WebDev = () => {
   return (
     <>
       <div id="webdev" className="h-20"></div>
-
       <section className="flex flex-col items-center">
         {/* <div className=" mb-6 mt-10 bg-yellow-300 p-1 w-[90%]">
         <h2 className="text-gray-900 text-2xl text-center tracking-widest font-bold">
@@ -27,13 +27,10 @@ const WebDev = () => {
 
         <div class="grid grid-cols-2 w-[90%] max-w-6xl">
           {WebDevData.map((e) => {
-            return (
-              <>
-                <Card1 {...e} />
-              </>
-            );
+            return <>{e.feature ? <CardFeature {...e} /> : <Card1 {...e} />}</>;
           })}
         </div>
+
         <div id="design"></div>
       </section>
     </>
