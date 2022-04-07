@@ -1,4 +1,9 @@
+import Modal1 from "./Modal1";
+import { ModalContext } from "../contexts/ModalContext";
+import { useContext } from "react";
 const Card2 = (props) => {
+  const [modal, setModal] = useContext(ModalContext);
+
   return (
     <>
       <div
@@ -10,6 +15,17 @@ const Card2 = (props) => {
 		transition-all
 		cursor-pointer
 		"
+        onClick={() =>
+          setModal({
+            trigger: true,
+            name: props.name,
+            categories: props.categories,
+            description: props.description,
+            stack: props.stack,
+            img: props.img,
+            year: props.year,
+          })
+        }
       >
         <div className="bg-white h-full p-2 flex flex-col">
           <img
@@ -17,6 +33,7 @@ const Card2 = (props) => {
             alt={props.name}
             className="border-2 border-gray-300 h-max "
           />
+
           <div className="w-2/3 p-4 text-gray-900">
             <h2 className="font-heading font-bold text-3xl mt-2 ">
               {props.name}
@@ -33,10 +50,6 @@ const Card2 = (props) => {
             <p className="leading-tight mt-3 mb-4 text-lg">
               {props.description}
             </p>
-            {/* <p className="tracking-wide text-xs font-bold text-gray-700 font-heading bg-gray-300 w-max px-1 mt-2 mb-1">
-              TECH STACK:
-            </p>
-            <p className="text-sm">{props.stack.join(", ")}</p> */}
           </div>
         </div>
       </div>
