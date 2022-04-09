@@ -1,4 +1,4 @@
-import SkillsData from "../content/SkillsData";
+import SkillsData from "../../content/SkillsData";
 import Rating from "./Rating";
 import SkillsCard from "./SkillsCard";
 

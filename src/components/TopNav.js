@@ -3,7 +3,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const TopNav = () => {
   return (
     <>
-      <header className="fixed top z-50 shadow-lg w-full border-b-[1px] border-yellow-300">
+      <header className="fixed top z-20 shadow-lg w-full border-b-[1px] border-yellow-300">
         <nav className="bg-stone-900 flex justify-between items-center cursor-pointer transition-all">
           <div className="bg-yellow-300 p-3">
             <Link smooth to="#home">

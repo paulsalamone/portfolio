@@ -1,3 +1,5 @@
+import Categories from "./Categories";
+
 const CardFeature = (props) => {
   return (
     <>
@@ -19,15 +21,8 @@ const CardFeature = (props) => {
             <h2 className="font-heading font-bold text-3xl mt-2 ">
               {props.name}
             </h2>
-            <div className="flex my-1">
-              {props.categories.map((e) => {
-                return (
-                  <div className="bg-yellow-300 mr-1 p-1 uppercase font-heading text-xs font-bold text-gray-700 tracking-wide">
-                    {e}
-                  </div>
-                );
-              })}
-            </div>
+            <Categories categories={props.categories} />
+
             <p className="leading-tight mt-3 mb-2 text-lg">
               {props.description}
             </p>

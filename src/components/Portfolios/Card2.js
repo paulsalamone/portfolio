@@ -1,16 +1,19 @@
 import Modal1 from "./Modal1";
-import { ModalContext } from "../contexts/ModalContext";
+import { ModalContext } from "../../contexts/ModalContext";
 import { useContext } from "react";
+import Categories from "./Categories";
+
 const Card2 = (props) => {
   const [modal, setModal] = useContext(ModalContext);
-
+  console.log("Card2 says modal is " + modal);
   return (
     <>
       <div
-        className="bg-yellow-300 m-2 p-2
+        className="box-border bg-yellow-300 m-2 p-2
 	    hover:translate-x-[-1px] 
 		hover:translate-y-[-1px] 
-		active:translate-x-[1px] 
+hover:shadow-3xl
+    active:translate-x-[1px] 
 		active:translate-y-[1px] 
 		transition-all
 		cursor-pointer
@@ -27,7 +30,12 @@ const Card2 = (props) => {
           })
         }
       >
-        <div className="bg-white h-full p-2 flex flex-col">
+        <div
+          className="bg-white h-full p-2 flex flex-col
+          border-white border-[1px]
+        box-border hover:border-[1px] hover:border-yellow-500
+        "
+        >
           <img
             src={props.img}
             alt={props.name}
@@ -38,15 +46,8 @@ const Card2 = (props) => {
             <h2 className="font-heading font-bold text-3xl mt-2 ">
               {props.name}
             </h2>
-            <div className="flex flex-row flex-wrap my-1 ">
-              {props.categories.map((e) => {
-                return (
-                  <div className="bg-yellow-300 mr-1 mb-1 p-1 uppercase font-heading text-xs font-bold text-gray-700 tracking-wide">
-                    {e}
-                  </div>
-                );
-              })}
-            </div>
+            <Categories categories={props.categories} />
+
             <p className="leading-tight mt-3 mb-4 text-lg">
               {props.description}
             </p>

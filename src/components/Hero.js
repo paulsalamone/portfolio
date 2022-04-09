@@ -32,7 +32,7 @@ const Hero = () => {
               comedy
             </span>
             .
-            <h2 className="text-2xl mt-10">
+            <h2 className="text-2xl mt-8">
               *Top skills: HTML, CSS, Javascript, React, TailwindCSS, p5.js
             </h2>
           </h1>
