@@ -35,7 +35,7 @@ const Design = (props) => {
           })}
         </div>
         <div
-          class="bg-stone-900 text-white w-full text-center
+          class="bg-stone-900 text-white  text-center
         p-5 mt-2 text-xl flex flex-row justify-center w-[90%] max-w-6xl
         "
         >

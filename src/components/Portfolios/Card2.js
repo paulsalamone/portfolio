@@ -27,6 +27,15 @@ hover:shadow-3xl
             stack: props.stack,
             img: props.img,
             year: props.year,
+            subtitle1: props.subtitle1,
+            caption1: props.caption1,
+            img1: props.img1,
+            subtitle2: props.subtitle2,
+            caption2: props.caption2,
+            img2: props.img2,
+            subtitle3: props.subtitle3,
+            caption3: props.caption3,
+            img3: props.img3,
           })
         }
       >
