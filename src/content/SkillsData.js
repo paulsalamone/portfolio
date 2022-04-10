@@ -16,6 +16,7 @@ const SkillsData = {
     { name: "MySQL", rating: 2 },
     { name: "MongoDB", rating: 2 },
     { name: "Mongoose", rating: 2 },
+    { name: "Python", rating: 3 },
   ],
   design: [
     { name: "Illustrator", rating: 5 },

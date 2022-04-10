@@ -55,7 +55,7 @@ const CardFeature = (props) => {
               </div>
               <div class="w-[49.5%]">
                 <img
-                  src={props.img2}
+                  src={props.img3}
                   alt={props.name}
                   className="border-2 border-gray-300 "
                 />

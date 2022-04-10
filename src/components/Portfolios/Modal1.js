@@ -63,9 +63,11 @@ border-4 border-yellow-300
 
               {/* SECTION 1 */}
               <div class="flex flex-column items-center justify-center mb-10">
-                <div class="flex flex-row w-[80%] mt-5">
-                  <img src={modal.img1} class="w-1/2" />
-                  <div class="ml-7 mt-16 w-1/2">
+                <div class="grid grid-cols-2 w-[80%] mt-5 ">
+                  <div class=" flex justify-center">
+                    <img src={modal.img1} class="max-h-[300px]" />
+                  </div>
+                  <div class="ml-7 ">
                     <h3 class="text-black font-heading font-semibold text-2xl my-4">
                       {modal.subtitle1}
                     </h3>
@@ -95,18 +97,20 @@ border-4 border-yellow-300
                   <p class="w-[65%] text-center mb-7 text-lg">
                     {modal.caption3}
                   </p>
-                  {modal.img3.map((e) => {
-                    return (
-                      <>
-                        <img
-                          src={e.src}
-                          alt={modal.subtitle3}
-                          class="w-[50%] mt-5 mb-2 border-2 shadow-md"
-                        />
-                        <p class="text-sm mb-5 text-stone-400">{e.caption}</p>
-                      </>
-                    );
-                  })}
+                  <div class="text-center flex flex-col items-center w-[80%]">
+                    {modal.img3.map((e) => {
+                      return (
+                        <>
+                          <img
+                            src={e.src}
+                            alt={modal.subtitle3}
+                            class=" mt-5 mb-2 border-2 shadow-md max-h-[300px] w-auto"
+                          />
+                          <p class="text-sm mb-5 text-stone-600">{e.caption}</p>
+                        </>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

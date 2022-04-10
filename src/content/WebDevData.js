@@ -7,8 +7,9 @@ export const WebDevData = [
     \n
     This was a collaborative project between me and backend developer Mimoona Rahel for our final project at WBS Coding School.`,
     stack: ["React.js", "p5.js", "Vanilla CSS"],
-    img: "/images/pixasso1.png",
-    img2: "/images/pixasso2.png",
+    img: "/images/pixasso_home.png",
+    img2: "/images/pixasso_algo1.png",
+    img3: "/images/pixasso_algo2.png",
     link: "http://pixasso.netlify.app",
     year: 2022,
     feature: true,
