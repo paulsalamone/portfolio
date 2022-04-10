@@ -35,7 +35,7 @@ xl: 1280
           2xl:text-5xl 2xl:leading-normal
           max-w-[1100px]
          "
-          style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5" }}
+          style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.4" }}
         >
           <p
             class="font-heading font-bold text-[1.5em] 
