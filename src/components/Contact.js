@@ -19,14 +19,9 @@ const Contact = () => {
           id="contact"
           className="flex flex-col items-center mt-8  mb-20 bg-yellow-300 w-[60%] p-10"
         >
-          <h2 class="text-3xl text-black font-heading font-light">
-            Thanks for the message!{" "}
+          <h2 class="text-2xl text-black font-heading font-light">
+            Message sent!
           </h2>
-
-          <br />
-          <h3 class="text-xl text-black font-heading font-light">
-            I'll get back to you ASAP. 🥨🥨🥨
-          </h3>
         </section>
       </>
     );
