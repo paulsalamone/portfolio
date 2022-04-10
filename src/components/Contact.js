@@ -1,14 +1,36 @@
 import { useState } from "react";
 
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT =
+  "https://public.herotofu.com/v1/d5583de0-b8ee-11ec-bf6a-51abb0925361";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    console.log(e.target.value);
+    setTimeout(() => {
+      setSubmitted(true);
+    }, 100);
   };
 
+  if (submitted) {
+    return (
+      <>
+        <section
+          id="contact"
+          className="flex flex-col items-center mt-8  mb-20 bg-yellow-300 w-[60%] p-10"
+        >
+          <h2 class="text-3xl text-black font-heading font-light">
+            Thanks for the message!{" "}
+          </h2>
+
+          <br />
+          <h3 class="text-xl text-black font-heading font-light">
+            I'll get back to you ASAP. 🥨🥨🥨
+          </h3>
+        </section>
+      </>
+    );
+  }
   return (
     <>
       <section id="contact" className="flex flex-col items-center mt-8 w-full">
@@ -21,6 +43,7 @@ const Contact = () => {
         </div>
         {/* CONTACT FORM */}
         <form
+          action={FORM_ENDPOINT}
           onSubmit={handleSubmit}
           method="POST"
           target="_blank"
