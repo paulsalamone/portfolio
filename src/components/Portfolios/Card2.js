@@ -51,7 +51,7 @@ hover:shadow-3xl
             className="border-2 border-gray-300 h-max "
           />
 
-          <div className="w-2/3 p-4 text-gray-900">
+          <div className="p-4 text-gray-900">
             <h2 className="font-heading font-bold text-3xl mt-2 ">
               {props.name}
             </h2>

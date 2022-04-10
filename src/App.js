@@ -24,16 +24,14 @@ import Modal1 from "./components/Portfolios/Modal1";
 function App() {
   return (
     <>
-      <div
-        className="App bg-gradient-to-b from-stone-600 to-stone-900 h-content scroll-smooth "
-        // style={{ height: "100vh" }}
-      >
+      <div className="h-content scroll-smooth w-fit ">
+        {/* <div className="bg-gradient-to-b from-stone-600 to-stone-900 h-content scroll-smooth w-fit "> */}
         <Modal1 />
         <TopNav />
-        <main>
+
+        <main class="flex flex-col items-center">
           <Hero />
           <WebDev />
-
           <Design />
           <Skills />
           <Contact />

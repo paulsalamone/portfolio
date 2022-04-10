@@ -4,41 +4,64 @@ import Paul from "../assets/paul-portrait.svg";
 
 const Hero = () => {
   return (
-    <section class="w-full p-5 " id="home">
-      <div class="h-14"></div>
-      <div class="h-80 p-4">
-        {/* <img src={BracketL} class="h-60" /> */}
+    <section
+      class="w-full p-5 flex flex-col items-center 
+    max-w-[1800px] 
+    "
+      id="home"
+    >
+      <div id="top-spacer" class="mt-20"></div>
 
-        <div class="flex  ">
-          <h1 class="text-white text-4xl drop-shadow-lg p-4 pl-10 w-2/3 leading-[50px] ">
-            <span class="font-heading font-bold text-5xl  max-w-sm">
-              Hi, I’m Paul,{" "}
-            </span>
-            <br />
-            <span class="font-sans">
-              a{" "}
-              <span class="bg-yellow-300 text-gray-800 font-bold px-1">
-                {" "}
-                frontend developer*
-              </span>{" "}
-              and{" "}
-              <span class="bg-yellow-300 text-gray-800 font-bold px-1">
-                graphic & web designer
-              </span>{" "}
-              living in Berlin, 🇩🇪
-            </span>
-            . In my free time I do{" "}
-            <span class="bg-yellow-300 text-gray-800 font-bold px-1">
-              comedy
-            </span>
-            .
-            <h2 className="text-2xl mt-8">
-              *Top skills: HTML, CSS, Javascript, React, TailwindCSS, p5.js
-            </h2>
-          </h1>
-          <img src={Paul} class="h-60 w-1/3" />
+      <div id="parent" class=" flex flex-row  w-[90%]">
+        {/* sm: 640
+md: 768
+lg: 1024
+xl: 1280
+2xl: 1536 */}
+
+        <div
+          id="text"
+          class="flex flex-col w-[70%] text-white
+          p-5
+          md:-10
+          lg:p-20  
+          
+          leading-normal
+
+          text-lg
+          md:text-2xl
+          lg:text-3xl
+          xl:text-4xl
+          2xl:text-5xl 2xl:leading-normal
+          max-w-[1100px]
+         "
+          style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5" }}
+        >
+          <p
+            class="font-heading font-bold text-[1.5em] 
+            md:mb-4
+          lg:mb-8"
+          >
+            Hi, I'm Paul,
+          </p>
+          <p>
+            a{" "}
+            <span class="bg-yellow-300 text-black px-1">
+              frontend developer
+            </span>{" "}
+            and{" "}
+            <span class="bg-yellow-300 text-black px-1">graphic designer</span>{" "}
+            living in Berlin, 🇩🇪.{" "}
+          </p>
+          <p class="mt-6">
+            In my free time I do{" "}
+            <span class="bg-yellow-300 text-black px-1">comedy</span>.
+          </p>
         </div>
-        {/* <img src={BracketR} class="h-60" /> */}
+
+        <div id="image" class="w-[30%]">
+          <img src={Paul} class="w-full max-h-[370px]" />
+        </div>
       </div>
     </section>
   );

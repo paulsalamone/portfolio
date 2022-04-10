@@ -1,7 +1,5 @@
-import PureModal from "react-pure-modal";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { ModalContext } from "../../contexts/ModalContext";
-import "./Modal.css";
 
 import { GrFormClose as Close } from "react-icons/gr";
 
