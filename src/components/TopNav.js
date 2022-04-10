@@ -1,4 +1,5 @@
 import { HashLink as Link } from "react-router-hash-link";
+import TopIcons from "./TopIcons";
 
 const TopNav = () => {
   return (
@@ -66,14 +67,16 @@ const TopNav = () => {
                 <a
                   href="#contact"
                   class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
-				transition-all"
+				transition-all
+        mr-20
+        "
                 >
                   Contact
                 </a>
               </Link>
             </div>
-            <div class="text-white text-xs align-middle pt-3 px-4">
-              [li] [gh] [tw] [be]
+            <div>
+              <TopIcons />
             </div>
           </div>
         </nav>
