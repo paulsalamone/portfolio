@@ -9,5 +9,8 @@
 }
 
 body {
-  background-color: rgb(28 25 23);
+  /* background-color: rgb(28 25 23); */
+  background-image: linear-gradient(0deg, #1c1917, #57534e);
 }
+
+/* <div className="bg-gradient-to-b from-stone-600 to-stone-900 h-content scroll-smooth w-fit "> */
