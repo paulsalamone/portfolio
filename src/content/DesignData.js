@@ -45,50 +45,43 @@ export const DesignData = [
     caption3: "Various advertising materials:",
     img3: [
       { src: "/images/jimmy/flyer.png", caption: "Print flyer (front view)" },
-      { src: "/images/jimmy/round.png", caption: "Round card" },
+
       { src: "/images/jimmy/ad.png", caption: "Magazine ad" },
       {
         src: "/images/jimmy/billboard.png",
         caption:
           "Billboard (breaks Corporate Identity based on client request)",
       },
+      { src: "/images/jimmy/round.png", caption: "Round card" },
     ],
   },
+
   {
-    name: "Important Startup News",
-    categories: ["logo", "editorial", "social media"],
-    description:
-      'A short-lived satirical startup news channel created with my associate Christoph "Pitch Doctor" Sollich',
-    stack: ["Illustrator", "Photoshop"],
-    img: "/images/isn1.png",
+    name: "Comedy Graphics",
+    categories: ["flyers", "promo", "comedy"],
+    description: "Various flyers created for shows in the Berlin comedy scene",
+    stack: ["Illustrator", "InDesign"],
+    img: "/images/jimmy1.png",
     year: 2021,
+    subtitle1: "Show Logo",
+    caption1: "super happy fun show...",
+    img1: "/images/jimmy/logo.png",
+    subtitle2: "Alternative logo ideas:",
+    caption2:
+      "Client is a younger candidate trying to bring transparency and digitalisation to the declining city of Niagara Falls. Logo ideas seeking to reflect that:",
+    img2: "/images/jimmy/options.png",
+    subtitle3: "Print Materials",
+    caption3: "Various advertising materials:",
+    img3: [
+      { src: "/images/jimmy/flyer.png", caption: "Print flyer (front view)" },
+
+      { src: "/images/jimmy/ad.png", caption: "Magazine ad" },
+      {
+        src: "/images/jimmy/billboard.png",
+        caption:
+          "Billboard (breaks Corporate Identity based on client request)",
+      },
+      { src: "/images/jimmy/round.png", caption: "Round card" },
+    ],
   },
-  // {
-  //   name: "Abbondanza 2021",
-  //   categories: ["logo", "print"],
-  //   description:
-  //     "Campaign logo and print materials for Niagara Falls-base city council candidate James Abbondanza.",
-  //   stack: ["Illustrator", "InDesign"],
-  //   img: "/images/jimmy1.png",
-  //   year: 2021,
-  // },
-  // ,
-  // {
-  //   name: "Important Startup News",
-  //   categories: ["logo", "editorial", "social media"],
-  //   description:
-  //     'A short-lived satirical startup news channel created with my associate Christoph "Pitch Doctor" Sollich',
-  //   stack: ["Illustrator", "Photoshop"],
-  //   img: "/images/isn1.png",
-  //   year: 2021,
-  // },
-  // {
-  //   name: "Abbondanza 2021",
-  //   categories: ["logo", "print"],
-  //   description:
-  //     "Campaign logo and print materials for Niagara Falls-base city council candidate James Abbondanza.",
-  //   stack: ["Illustrator", "InDesign"],
-  //   img: "/images/jimmy1.png",
-  //   year: 2021,
-  // },
 ];
