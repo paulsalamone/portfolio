@@ -9,6 +9,7 @@ const SkillsData = {
     { name: "SASS/SCSS", rating: 3 },
     { name: "API Fetch / Axios", rating: 3 },
     { name: "Typescript", rating: 2 },
+    { name: "Vue", rating: 1 },
   ],
   backend: [
     { name: "Node.js", rating: 2 },

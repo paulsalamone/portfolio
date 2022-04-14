@@ -52,12 +52,13 @@ hover:shadow-3xl
             <img
               src={props.img}
               alt={props.name}
-              className="border-2 border-gray-300 w-[100%] "
+              className="border-2 border-gray-300 w-[100%] hover:border-gray-500 "
             />
+            {/* <div class="bg-stone-900 h-full relative z-50 top-[-225px]"></div> */}
           </div>
 
           <div className="p-2 sm:p-4 text-gray-900">
-            <h2 className="font-heading font-bold text-2xl sm:text-3xl mt-2 ">
+            <h2 className="font-heading font-bold text-2xl sm:text-2xl mt-2 ">
               {props.name}
             </h2>
             <Categories categories={props.categories} />

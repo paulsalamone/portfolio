@@ -57,7 +57,7 @@ export default function TopHamburger() {
         <div>
           <div className="bg-stone-900 flex flex-col sm:flex-row font-bold pt-4 border-b-[1px] border-yellow-300">
             <div class="sm:border-l-2 border-stone-900 sm:border-dotted my-2">
-              <Link smooth to="#home">
+              <Link smooth to="#home" onClick={handleClose}>
                 <a
                   class="text-white font-heading text-lg font-light  mx-6  py-1 uppercase tracking-wide border-solid border-b-[1px] border-stone-900 hover:border-yellow-300 
 				hover:text-yellow-300
@@ -68,7 +68,7 @@ export default function TopHamburger() {
               </Link>
             </div>
             <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted my-2">
-              <Link smooth to="#webdev">
+              <Link smooth to="#webdev" onClick={handleClose}>
                 <a
                   href="#webdev"
                   class="text-white font-heading text-lg font-light  mx-6  py-1 uppercase tracking-wide border-solid border-b-[1px] border-stone-900 hover:border-yellow-300 hover:text-yellow-300
@@ -79,7 +79,7 @@ export default function TopHamburger() {
               </Link>
             </div>
             <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted my-2">
-              <Link smooth to="#design">
+              <Link smooth to="#design" onClick={handleClose}>
                 <a
                   class="text-white font-heading text-lg font-light  mx-6  py-1 uppercase tracking-wide border-solid border-b-[1px] border-stone-900 hover:border-yellow-300 hover:text-yellow-300
 				transition-all"
@@ -89,7 +89,7 @@ export default function TopHamburger() {
               </Link>
             </div>
             <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted my-2">
-              <Link smooth to="#skills">
+              <Link smooth to="#skills" onClick={handleClose}>
                 <a
                   href="#skills"
                   class="text-white font-heading text-lg font-light  mx-6  py-1 uppercase tracking-wide border-solid border-b-[1px] border-stone-900 hover:border-yellow-300 hover:text-yellow-300
@@ -100,7 +100,7 @@ export default function TopHamburger() {
               </Link>
             </div>
             <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted my-2">
-              <Link smooth to="#contact">
+              <Link smooth to="#contact" onClick={handleClose}>
                 <a
                   href="#contact"
                   class="text-white font-heading text-lg font-light  mx-6  py-1 uppercase tracking-wide border-solid border-b-[1px] border-stone-900 hover:border-yellow-300 hover:text-yellow-300
