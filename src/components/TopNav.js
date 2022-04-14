@@ -1,10 +1,12 @@
 import { HashLink as Link } from "react-router-hash-link";
 import TopIcons from "./TopIcons";
+import TopHamburger from "./TopHamburger";
 
 const TopNav = () => {
   return (
     <>
-      <header className="fixed top z-20 shadow-lg w-full border-b-[1px] border-yellow-300">
+      <TopHamburger />
+      <header className="hidden sm:block fixed top z-20 shadow-lg w-full border-b-[1px] border-yellow-300">
         <nav
           className="bg-stone-900 flex flex-col sm:flex-row justify-between items-center cursor-pointer 
         text-center sm:text-left

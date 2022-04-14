@@ -10,7 +10,7 @@ const Hero = () => {
     "
       id="home"
     >
-      <div id="top-spacer" class="mt-64 sm:mt-20"></div>
+      <div id="top-spacer" class=" sm:mt-20"></div>
 
       <div id="parent" class=" flex flex-row  w-[90%]">
         {/* sm: 640
