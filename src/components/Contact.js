@@ -15,10 +15,9 @@ const Contact = () => {
   if (submitted) {
     return (
       <>
-        <section
-          id="contact"
-          className="flex flex-col items-center mt-8  mb-20 bg-yellow-300 w-[60%] p-10"
-        >
+        <div id="contact" className="h-16"></div>
+
+        <section className="flex flex-col items-center mt-8  mb-20 bg-yellow-300 w-[60%] p-10">
           <h2 class="text-2xl text-black font-heading font-light">
             Message sent!
           </h2>
@@ -28,7 +27,9 @@ const Contact = () => {
   }
   return (
     <>
-      <section id="contact" className="flex flex-col items-center mt-8 w-full">
+      <div id="contact" className="h-16"></div>
+
+      <section className="flex flex-col items-center mt-8 w-full">
         <div className="flex flex-row items-center w-[90%] max-w-6xl align-middle ">
           <div className="border-b-2 border-dotted w-2/5"></div>
           <h2 className="text-white text-3xl text-center tracking-widest font-medium mt-5 mb-4 mx-3 w-1/5">

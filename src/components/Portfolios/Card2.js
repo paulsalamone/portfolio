@@ -9,7 +9,8 @@ const Card2 = (props) => {
   return (
     <>
       <div
-        className="box-border bg-yellow-300 m-2 p-2
+        className="box-border bg-yellow-300 
+        m-2 p-2
 	    hover:translate-x-[-1px] 
 		hover:translate-y-[-1px] 
 hover:shadow-3xl

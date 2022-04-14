@@ -10,7 +10,7 @@ const Hero = () => {
     "
       id="home"
     >
-      <div id="top-spacer" class="mt-20"></div>
+      <div id="top-spacer" class="mt-64 sm:mt-20"></div>
 
       <div id="parent" class=" flex flex-row  w-[90%]">
         {/* sm: 640
@@ -21,14 +21,15 @@ xl: 1280
 
         <div
           id="text"
-          class="flex flex-col w-[70%] text-white
-          p-5
+          class=" flex flex-col w-[100%] sm:w-[70%] text-white
+          
+          sm:p-5
           md:-10
           lg:p-20  
           
           leading-normal
 
-          text-lg
+          text-xl
           md:text-2xl
           lg:text-3xl
           xl:text-4xl
@@ -59,8 +60,8 @@ xl: 1280
           </p>
         </div>
 
-        <div id="image" class="w-[30%]">
-          <img src={Paul} class="w-full max-h-[370px]" />
+        <div id="image" class="w-[0%] sm:w-[30%]">
+          <img src={Paul} class="hidden sm:block w-full max-h-[370px]" />
         </div>
       </div>
     </section>

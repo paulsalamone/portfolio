@@ -24,7 +24,7 @@ import Modal1 from "./components/Portfolios/Modal1";
 function App() {
   return (
     <>
-      <div className="h-content scroll-smooth w-fit ">
+      <div className="h-content scroll-smooth  ">
         {/* <div className="bg-gradient-to-b from-stone-600 to-stone-900 h-content scroll-smooth w-fit "> */}
         <Modal1 />
         <TopNav />

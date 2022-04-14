@@ -8,7 +8,7 @@ export default function TopIcons() {
   return (
     <>
       <div
-        class="flex flex-row justify-around w-[80px] ] text-2xl text-stone-500 mr-8
+        class="flex flex-row justify-around w-[80px] ] text-2xl text-stone-500 m-4 sm:m-0 sm:mr-8 
 	 
 	  "
       >
