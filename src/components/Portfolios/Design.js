@@ -31,13 +31,13 @@ const Design = (props) => {
         </div>
         <div
           class="bg-stone-900 text-white  text-center
-        p-5 mt-2 text-xl flex flex-row justify-center w-[90%] max-w-6xl
+        p-3 sm:p-5 mt-2 text-lg sm:text-xl flex flex-col sm:flex-row justify-center items-center w-[90%] max-w-6xl
         "
         >
           See more on my
           <a
             href="https://www.behance.net/paulsalamone"
-            class="flex flex-row items-center ml-3"
+            class="flex flex-row items-center sm:ml-3"
           >
             <span class="text-yellow-300 flex flex-row items-center ">
               Behance Portfolio

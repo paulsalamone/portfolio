@@ -5,12 +5,12 @@ import Paul from "../assets/paul-portrait.svg";
 const Hero = () => {
   return (
     <section
-      class="w-full p-5 flex flex-col items-center 
+      class="w-full p-2 sm:p-5 flex flex-col items-center 
     max-w-[1800px] 
     "
       id="home"
     >
-      <div id="top-spacer" class=" sm:mt-20"></div>
+      <div id="top-spacer" class="mt-20"></div>
 
       <div id="parent" class=" flex flex-row  w-[90%]">
         {/* sm: 640

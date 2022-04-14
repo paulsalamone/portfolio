@@ -5,7 +5,7 @@ const SkillsCard = (props) => {
   return (
     <>
       <div
-        className="border-2 border-yellow-300 border-dotted rounded-lg py-6 px-10
+        className="border-2 border-yellow-300 border-dotted rounded-lg py-6 px-10 
       h-[100%]
       "
       >

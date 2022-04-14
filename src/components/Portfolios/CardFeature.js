@@ -3,19 +3,24 @@ import Categories from "./Categories";
 const CardFeature = (props) => {
   return (
     <>
-      <div className="bg-yellow-300 m-2 p-2 col-span-2">
+      <div className="bg-yellow-300 m-1 sm:m-2 p-2 col-span-2">
         <div
-          className="bg-white h-full p-5 flex flex-col 
+          className="bg-white h-full p-1 sm:p-5 flex flex-col 
           sm:flex-row"
         >
-          <div className="p-5 sm:w-2/5">
+          <div className="p-3 sm:p-5 sm:w-2/5">
             <h2>FEATURED:</h2>
-            <h2 className="font-heading font-bold text-3xl mt-2 ">
+            <img
+              src={props.img}
+              alt={props.name}
+              className="block sm:hidden border-2 border-gray-300 w-[100%] "
+            />
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl mt-2 ">
               {props.name}
             </h2>
             <Categories categories={props.categories} />
 
-            <p className="leading-tight mt-3 mb-2 text-lg">
+            <p className="leading-tight mt-3 mb-2 text-md sm:text-lg">
               {props.description}
             </p>
             <p>
