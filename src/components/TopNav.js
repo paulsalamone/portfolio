@@ -1,12 +1,18 @@
 import { HashLink as Link } from "react-router-hash-link";
 import TopIcons from "./TopIcons";
+import TopHamburger from "./TopHamburger";
 
 const TopNav = () => {
   return (
     <>
-      <header className="fixed top z-20 shadow-lg w-full border-b-[1px] border-yellow-300">
-        <nav className="bg-stone-900 flex justify-between items-center cursor-pointer transition-all">
-          <div className="bg-yellow-300 p-3">
+      <TopHamburger />
+      <header className="hidden sm:block fixed top z-20 shadow-lg w-full border-b-[1px] border-yellow-300">
+        <nav
+          className="bg-stone-900 flex flex-col sm:flex-row justify-between items-center cursor-pointer 
+        text-center sm:text-left
+        transition-all z-50"
+        >
+          <div className="bg-yellow-300 p-3 mb-2 sm:mb-0">
             <Link smooth to="#home">
               <h1 class="text-2xl font-heading font-black h-full border-b-2 border-yellow-300 hover:border-stone-900">
                 <a>
@@ -18,8 +24,8 @@ const TopNav = () => {
               </h1>
             </Link>
           </div>
-          <div className="bg-gray-900 flex font-bold ">
-            <div class="border-l-2 border-gray-900 border-dotted">
+          <div className="bg-stone-900 flex flex-col sm:flex-row font-bold ">
+            <div class="sm:border-l-2 border-stone-900 sm:border-dotted">
               <Link smooth to="#home">
                 <a
                   class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 
@@ -30,7 +36,7 @@ const TopNav = () => {
                 </a>
               </Link>
             </div>
-            <div class="border-l-2 border-yellow-300 border-dotted">
+            <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted">
               <Link smooth to="#webdev">
                 <a
                   href="#webdev"
@@ -41,7 +47,7 @@ const TopNav = () => {
                 </a>
               </Link>
             </div>
-            <div class="border-l-2 border-yellow-300 border-dotted">
+            <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted">
               <Link smooth to="#design">
                 <a
                   class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
@@ -51,7 +57,7 @@ const TopNav = () => {
                 </a>
               </Link>
             </div>
-            <div class="border-l-2 border-yellow-300 border-dotted">
+            <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted">
               <Link smooth to="#skills">
                 <a
                   href="#skills"
@@ -62,13 +68,13 @@ const TopNav = () => {
                 </a>
               </Link>
             </div>
-            <div class="border-l-2 border-yellow-300 border-dotted">
+            <div class="sm:border-l-2 sm:border-yellow-300 sm:border-dotted">
               <Link smooth to="#contact">
                 <a
                   href="#contact"
                   class="text-white font-heading text-xs mx-4 py-1 uppercase tracking-wide border-solid border-b-[1px] border-gray-900 hover:border-yellow-300 hover:text-yellow-300
 				transition-all
-        mr-20
+        sm:mr-20
         "
                 >
                   Contact

@@ -3,27 +3,24 @@ import Categories from "./Categories";
 const CardFeature = (props) => {
   return (
     <>
-      <div
-        className="bg-yellow-300 m-2 p-2 col-span-2"
-        // hover:translate-x-[-1px]
-        // hover:translate-y-[-1px]
-        // active:translate-x-[1px]
-        // active:translate-y-[1px]
-        // transition-all
-        // cursor-pointer
-      >
+      <div className="bg-yellow-300 m-1 sm:m-2 p-2 col-span-2">
         <div
-          className="bg-white h-full p-5 flex
-		flex-row"
+          className="bg-white h-full p-1 sm:p-5 flex flex-col 
+          sm:flex-row"
         >
-          <div className="p-5 w-2/5">
+          <div className="p-3 sm:p-5 sm:w-2/5">
             <h2>FEATURED:</h2>
-            <h2 className="font-heading font-bold text-3xl mt-2 ">
+            <img
+              src={props.img}
+              alt={props.name}
+              className="block sm:hidden border-2 border-gray-300 w-[100%] "
+            />
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl mt-2 ">
               {props.name}
             </h2>
             <Categories categories={props.categories} />
 
-            <p className="leading-tight mt-3 mb-2 text-lg">
+            <p className="leading-tight mt-3 mb-2 text-md sm:text-lg">
               {props.description}
             </p>
             <p>
@@ -39,21 +36,21 @@ const CardFeature = (props) => {
             </p>
             <p className="text-sm">{props.stack.join(", ")}</p>
           </div>
-          <div class="w-3/5 ">
+          <div class="sm:w-3/5 ">
             <img
               src={props.img}
               alt={props.name}
-              className="border-2 border-gray-300 w-[100%] "
+              className="hidden sm:block border-2 border-gray-300 w-[100%] "
             />
-            <div class="flex flex-row  justify-between  mt-1 w-[100%]">
-              <div class="w-[49.5%]">
+            <div class="flex flex-col sm:flex-row  justify-between  mt-1 w-[100%]">
+              <div class="sm:w-[49.5%]">
                 <img
                   src={props.img2}
                   alt={props.name}
                   className="border-2 border-gray-300  "
                 />
               </div>
-              <div class="w-[49.5%]">
+              <div class="sm:w-[49.5%]">
                 <img
                   src={props.img3}
                   alt={props.name}

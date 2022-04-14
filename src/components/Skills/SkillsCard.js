@@ -4,7 +4,11 @@ const SkillsCard = (props) => {
   console.log(props.data);
   return (
     <>
-      <div className="border-2 border-yellow-300 border-dotted rounded-lg py-6 px-10">
+      <div
+        className="border-2 border-yellow-300 border-dotted rounded-lg py-6 px-10 
+      h-[100%]
+      "
+      >
         <h3 className="text-white uppercase text-center mb-4 text-md tracking-wider font-heading font-bold">
           {props.name}
         </h3>

@@ -9,7 +9,8 @@ const Card2 = (props) => {
   return (
     <>
       <div
-        className="box-border bg-yellow-300 m-2 p-2
+        className="box-border bg-yellow-300 
+        m-2 p-2
 	    hover:translate-x-[-1px] 
 		hover:translate-y-[-1px] 
 hover:shadow-3xl
@@ -17,6 +18,7 @@ hover:shadow-3xl
 		active:translate-y-[1px] 
 		transition-all
 		cursor-pointer
+    
 		"
         onClick={() =>
           setModal({
@@ -41,23 +43,26 @@ hover:shadow-3xl
       >
         <div
           className="bg-white h-full p-2 flex flex-col
+          items-center
           border-white border-[1px]
         box-border hover:border-[1px] hover:border-yellow-500
         "
         >
-          <img
-            src={props.img}
-            alt={props.name}
-            className="border-2 border-gray-300 h-max "
-          />
+          <div class="h-auto w-[80%] sm:w-[90%] mt-3">
+            <img
+              src={props.img}
+              alt={props.name}
+              className="border-2 border-gray-300 w-[100%] "
+            />
+          </div>
 
-          <div className="p-4 text-gray-900">
-            <h2 className="font-heading font-bold text-3xl mt-2 ">
+          <div className="p-2 sm:p-4 text-gray-900">
+            <h2 className="font-heading font-bold text-2xl sm:text-3xl mt-2 ">
               {props.name}
             </h2>
             <Categories categories={props.categories} />
 
-            <p className="leading-tight mt-3 mb-4 text-lg">
+            <p className="leading-tight mt-3 mb-4 text-md sm:text-lg">
               {props.description}
             </p>
           </div>
