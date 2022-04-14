@@ -10,7 +10,7 @@ const TopNav = () => {
         <nav
           className="bg-stone-900 flex flex-col sm:flex-row justify-between items-center cursor-pointer 
         text-center sm:text-left
-        transition-all"
+        transition-all z-50"
         >
           <div className="bg-yellow-300 p-3 mb-2 sm:mb-0">
             <Link smooth to="#home">

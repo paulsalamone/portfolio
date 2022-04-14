@@ -18,6 +18,7 @@ hover:shadow-3xl
 		active:translate-y-[1px] 
 		transition-all
 		cursor-pointer
+    
 		"
         onClick={() =>
           setModal({

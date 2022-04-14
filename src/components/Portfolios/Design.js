@@ -20,7 +20,7 @@ const Design = (props) => {
       <section className="flex flex-col items-center mt-20">
         <SectionHead name="DESIGN" dots={true} />
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-[90%] max-w-6xl">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-[90%] max-w-6xl ">
           {DesignData.map((e) => {
             return (
               <>

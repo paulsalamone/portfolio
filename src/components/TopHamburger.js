@@ -55,7 +55,7 @@ export default function TopHamburger() {
       {/* MENU */}
       {menuOpen ? (
         <div>
-          <div className="bg-stone-900 flex flex-col sm:flex-row font-bold pt-4 border-b-[1px] border-yellow-300 z-50">
+          <div className="bg-stone-900 flex flex-col sm:flex-row font-bold pt-4 border-b-[1px] border-yellow-300">
             <div class="sm:border-l-2 border-stone-900 sm:border-dotted my-2">
               <Link smooth to="#home">
                 <a
