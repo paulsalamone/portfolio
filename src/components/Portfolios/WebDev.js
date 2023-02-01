@@ -1,13 +1,12 @@
 import { WebDevData } from "../../content/WebDevData";
 import Card1 from "./Card1";
 import CardFeature from "./CardFeature";
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import SectionHead from "../SectionHead";
 const WebDev = () => {
   return (
     <>
       <div id="webdev" className="h-4 sm:h-16"></div>
-      <SectionHead name="WEB NAV" dots={true} />
+      <SectionHead name="WEB DEV" dots={true} />
 
       <section className="flex flex-col items-center">
         {/* </div> */}
