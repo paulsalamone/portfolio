@@ -7,6 +7,47 @@
     <title>Paul's 'Altituder'</title>
 </head>
 <body>
-    es kommt....
+    <button id="get-location">get location</button>
+    <button id="reset">reset</button>
+
+    <div id="geo"></div>
+    <script>
+
+
+const button1 = document.querySelector("#get-location")
+const button2 = document.querySelector("#reset")
+
+
+let currentLocation;
+
+const handleLocation = function() {
+   
+    function success(pos) {
+  const crd = pos.coords;
+console.log("crd:", crd)
+currentLocation = `<b>Latitude</b>: ${crd.latitude}<br/> <b>Longtitude</b>: ${crd.longitude}<br/><b>Altitude</b>: ${crd.altitude}`
+//   console.log('Your current position is:');
+//   console.log(`Latitude : ${crd.latitude}`);
+//   console.log(`Longitude: ${crd.longitude}`);
+//   console.log(`More or less ${crd.accuracy} meters.`);
+document.getElementById('geo').innerHTML = `<h3>Current Location:</h3> <p>${currentLocation}</p>`
+}
+document.getElementById('geo').innerHTML = `<p>processing...</p>`
+navigator.geolocation.getCurrentPosition(success)
+
+}
+
+function handleReset() {
+    currentLocation="";
+    document.getElementById('geo').innerHTML = ``
+}
+button1.addEventListener('click', handleLocation)
+button2.addEventListener('click', handleReset)
+
+
+
+
+
+    </script>
 </body>
 </html>
